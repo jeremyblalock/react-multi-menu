@@ -77,6 +77,10 @@
     "react/button-has-type": "off",
     "react/no-direct-mutation-state": "error",
     "react/no-unescaped-entities": "off",
+    "max-classes-per-file": "off",
+    "react/static-property-placement": "off",
+    "react/state-in-constructor": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/no-array-index-key": "off"
   },
   "settings": {
