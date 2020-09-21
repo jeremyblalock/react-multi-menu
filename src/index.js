@@ -313,6 +313,7 @@ export class MultiMenu extends Component {
   }
 
   handleScroll = e => {
+    console.log('-------> STOPPING PROPAGATION')
     e.nativeEvent.stopImmediatePropagation()
     e.stopPropagation()
 
