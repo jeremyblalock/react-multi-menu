@@ -769,9 +769,15 @@ export class MultiMenuTrigger extends Component {
     window.removeEventListener('blur', this.handleBlur)
   }
 
+  getChildren = () => {
+    let { children } = this.props
+    let { expanded } = this.state
+
+    return React.cloneElement(children, { expanded })
+  }
+
   render() {
     let {
-      children,
       className,
       menuClassName,
       dark,
@@ -780,6 +786,8 @@ export class MultiMenuTrigger extends Component {
       rowHeight,
       childWidth,
     } = this.props
+
+    let children = this.getChildren()
 
     let { expandDirection, expanded, position, verticalExpand } = this.state
 
