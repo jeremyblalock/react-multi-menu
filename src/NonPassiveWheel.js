@@ -42,7 +42,6 @@ export default class NonPassiveWheelElement extends Component {
 
   render() {
     let { component: ComponentClass, onWheel, ...props } = this.props
-    console.log('CLASS:', ComponentClass)
 
     return <ComponentClass {...props} ref={this.ref} />
   }
