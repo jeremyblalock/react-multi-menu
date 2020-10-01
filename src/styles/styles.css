@@ -1,4 +1,6 @@
-.multi-menu-item.has-children:after, .multi-select-menu-expand-icon:before, .multi-menu-overflow-icon {
+.multi-menu-item.has-children:after,
+.multi-select-menu-expand-icon:before,
+.multi-menu-overflow-icon {
   content: '';
   display: block;
   width: 12px;
@@ -15,7 +17,8 @@
   margin-top: -6px;
 }
 
-.multi-menu, .multi-menu * {
+.multi-menu,
+.multi-menu * {
   box-sizing: border-box;
 }
 
@@ -70,12 +73,14 @@
   width: 180px;
 }
 
-.multi-menu, .multi-select-menu.expanded {
+.multi-menu,
+.multi-select-menu.expanded {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .multi-menu-wrapper-attached.expand-up .multi-menu {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), -4px 2px 6px rgba(0, 0, 0, 0.07), 4px 2px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), -4px 2px 6px rgba(0, 0, 0, 0.07),
+    4px 2px 6px rgba(0, 0, 0, 0.07);
 }
 
 .multi-menu-item {
@@ -89,7 +94,8 @@
   cursor: pointer;
 }
 
-.multi-menu-item.open, .multi-menu-item:hover {
+.multi-menu-item.open,
+.multi-menu-item:hover {
   background: #07f;
   color: #fff;
 
@@ -162,33 +168,6 @@
 .multi-menu-trigger {
   position: relative;
   user-select: none;
-}
-
-.multi-menu-trigger.expanded:before,
-.multi-menu-trigger.expanded:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  margin-top: 3px;
-  margin-left: -5px;
-  border: 5px solid transparent;
-  border-top: none;
-  border-bottom-color: #f5f5f5;
-  z-index: 99999;
-}
-
-.multi-menu-trigger.expanded:before {
-  border-width: 6px;
-  border-bottom-color: rgba(0, 0, 0, 0.15);
-  margin-top: 2px;
-  margin-left: -6px;
-}
-
-.multi-menu-trigger.expand-up.expanded:before,
-.multi-menu-trigger.expand-up.expanded:after {
-  display: none;
 }
 
 .multi-menu-wrapper {
@@ -278,13 +257,17 @@
   border-top-right-radius: 0;
 }
 
-.multi-menu-wrapper-attached.expand-down > .multi-menu-inner-wrapper > .multi-menu {
+.multi-menu-wrapper-attached.expand-down
+  > .multi-menu-inner-wrapper
+  > .multi-menu {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin-top: -1px;
 }
 
-.multi-menu-wrapper-attached.expand-up > .multi-menu-inner-wrapper > .multi-menu {
+.multi-menu-wrapper-attached.expand-up
+  > .multi-menu-inner-wrapper
+  > .multi-menu {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin-bottom: -1px;
@@ -312,11 +295,11 @@
   display: none;
 }
 
-.multi-select-menu-placeholder, .multi-menu-empty {
+.multi-select-menu-placeholder,
+.multi-menu-empty {
   color: #9a9a9a;
 }
 
 .multi-menu-empty {
   padding: 0 12px;
 }
-
